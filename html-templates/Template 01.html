@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education Blocks</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .education-block {
+    background: transparent; /* Set the background to transparent */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px; /* Further reduced margin */
+    padding: 10px; /* Further reduced padding */
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .education-block:hover {
+    background-color: #f9f9f9; /* Background color on hover */
+    cursor: pointer; /* Change cursor to indicate clickable */
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0077B5;
+    margin-bottom: 2px; /* Further reduced margin */
+  }
+
+  .institution {
+    font-size: 15px;
+    margin-bottom: 2px; /* Further reduced margin */
+    display: flex;
+    align-items: center; /* Align the icon and text vertically */
+  }
+
+  .location {
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    align-items: center; /* Align the icon and text vertically */
+    margin-bottom: 2px; /* Further reduced margin */
+  }
+
+  .location-icon {
+    font-size: 16px; /* Adjust size as needed */
+    color: #0077B5; /* Or any other color you prefer */
+    margin-right: 5px; /* Space between icon and text */
+  }
+
+  .period {
+    font-size: 13px;
+    color: #666;
+    text-align: right;
+    margin-top: auto; /* Keeps the period at the bottom */
+  }
+
+  @media screen and (max-width: 768px) {
+    .education-block {
+        padding: 8px; /* Even more reduced padding for small screens */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="education-block">
+  <div class="title">Bachelor's in Computer Science</div>
+  <div class="institution">
+    </span> <!-- Location Pin Icon -->
+    University of Technology
+  </div>
+  <div class="location">City, Country</div>
+  <div class="period">2021 - 2024</div>
+</div>
+
+<div class="education-block">
+  <div class="title">Associate's Degree in Information Technology</div>
+  <div class="institution">
+    </span> <!-- Location Pin Icon -->
+    City Community College
+  </div>
+  <div class="location">City, Country</div>
+  <div class="period">2018 - 2021</div>
+</div>
+
+<div class="education-block">
+  <div class="title">High School Diploma</div>
+  <div class="institution">
+    </span> <!-- Location Pin Icon -->
+    City High School
+  </div>
+  <div class="location">City, Country</div>
+  <div class="period">2015 - 2018</div>
+</div>
+
+</body>
+</html>

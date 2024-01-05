@@ -1,0 +1,399 @@
+---
+title: ""
+format: 
+  html
+editor: visual
+knitr:
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
+---
+
+```{r}
+#| include: false
+#| cache: false
+
+```
+
+::: columns
+::: {.column width="35%"}
+```{=html}
+<style>
+/* Style for the image */
+.img-container {
+  width: 200px; /* Initial width */
+  overflow: hidden; /* Hide the overflow */
+  opacity: 0; /* Start with the image invisible */
+  transition: opacity 2s ease-in, transform 0.5s ease; /* Transition for fade-in and hover */
+}
+
+/* Fade-in effect when the page loads */
+.img-container img {
+  width: 100%; /* Make image fill the container */
+  transition: transform 0.5s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.img-container:hover {
+  transform: scale(1.1); /* Increase size to 110% when hovered */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Apply the animation to the image container */
+.img-container {
+    animation: fadeIn 2s ease-in forwards; /* Apply the fade-in effect on load */
+}
+
+</style>
+```
+<a href="https://nionmaron.com/">
+
+::: img-container
+<img src="images/profile.png" alt="Descriptive Alt Text"/>
+:::
+
+</a>
+
+### Contact {#contact}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+```{=html}
+<style>
+.contact-item a {
+  text-decoration: none;  /* Remove o sublinhado */
+  color: inherit;         /* A cor do link será a mesma do texto circundante */
+}
+</style>
+```
+::: contact-item
+<i class="fas fa-envelope icon"></i> <a href="mailto:nionmaron@gmail.com">nionmaron\@gmail.com</a> <br> <i class="fab fa-linkedin icon"></i> <a href="https://www.linkedin.com/in/nionmaron/" target="_blank">linkedin.com/nionmaron</a> <br> <i class="fas fa-globe icon"></i> <a href="http://www.nionmaron.com" target="_blank">www.nionmaron.com</a> <br>
+:::
+
+### Programming languages {#skills}
+
+```{r setup, include=FALSE}
+bar_color <- "#969696" # Example: Red color
+bar_background <- "#d9d9d9" # Example: Light grey color
+```
+
+```{=html}
+<style>
+/* Add some styling to the skill-bar */
+.skill-bar {
+  width: 100%; /* Full width of the container */
+  background-color: `r bar_background`; /* Light grey background color of the bar */
+  position: relative; /* Set position relative for absolute positioning inside */
+  height: 30px; /* Fixed height for the bar */
+  margin-bottom: 10px; /* Space between bars */
+}
+
+/* The actual bar */
+.progress {
+  background-color: `r bar_color`; /* Green color of the progressing bar */
+  width: 0%; /* Start width at 0% to ensure left to right fill */
+  height: 100%; /* Full height of its container */
+  transition: width 2s ease; /* Smooth transition for the width */
+  position: absolute; /* Position the bar */
+}
+
+/* Text to display over the bar */
+.progress-text {
+  position: absolute; /* Position the text over the bar */
+  left: 10px; /* Small space from the left */
+  line-height: 30px; /* Align vertically */
+  /*font-weight: bold;  Make the text bold */
+  z-index: 1; /* Bring text in front of the bar */
+}
+</style>
+```
+<!-- Skill Bars -->
+
+::: skill-bar
+::: {.progress data-width="96"}
+:::
+
+::: progress-text
+R
+:::
+:::
+
+::: skill-bar
+::: {.progress data-width="75"}
+:::
+
+::: progress-text
+Python
+:::
+:::
+
+::: skill-bar
+::: {.progress data-width="55"}
+:::
+
+::: progress-text
+SQL
+:::
+:::
+
+::: skill-bar
+::: {.progress data-width="20"}
+:::
+
+::: progress-text
+JavaScript
+:::
+:::
+
+::: skill-bar
+::: {.progress data-width="20"}
+:::
+
+::: progress-text
+Scala
+:::
+:::
+
+::: skill-bar
+::: {.progress data-width="50"}
+:::
+
+::: progress-text
+MQL5
+:::
+:::
+
+<!-- Add more skill bars as needed -->
+
+```{=html}
+<script>
+// Use JavaScript to animate the width of the progress bars
+window.onload = function() {
+  var elems = document.querySelectorAll('.progress');
+  for(var i = 0; i < elems.length; i++) {
+    // Retrieve the target width from the data attribute
+    var targetWidth = elems[i].getAttribute('data-width') + '%';
+    // Animate the width from 0% to the target width
+    elems[i].style.width = targetWidth;
+  }
+}
+</script>
+```
+### Packages and Frameworks
+
+**`Rmarkdown`, `Quarto`,`Pandas`, `Caret`, `H2O`, `TensorFlow`, `OpenCV`**
+
+### DevOps Tool
+
+**`Git`, `GitHub`, `Docker`, `ShinyApp`, `PostgreSQL`, `PowerBI`, `Data Studio`**
+
+### Languages
+
+Portuguese: Native <br> English: Proficient
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="61%"}
+# [**Nion M. Dransfeld**]{.highlight}
+
+::: {style="text-align: justify"}
+<head>
+
+```{=html}
+<style>
+.highlight {
+  animation: fadeBackground 100s forwards; /* Animar por 5 segundos e manter o estado final */
+  display: inline; /* Manter o comportamento de texto */
+  padding: 5px 10px; /* 5px de espaço vertical e 10px de espaço horizontal */
+  margin: 0 5px; /* Espaço adicional nas laterais para separar do resto do texto */
+  border-radius: 5px; /* Borda arredondada com um raio de 5px */
+}
+
+@keyframes fadeBackground {
+  from {background-color: transparent;}
+  to {background-color: #b3daff;} /* Um tom de azul claro e moderno */
+}
+
+</style>
+```
+</head>
+
+Graduated in **Civil Engineering** and passionate about **data analysis** and **Business Intelligence**, I possess a **self-taught** approach to solving complex challenges. With skills in transforming data into insights for finance, I am adaptable and evolve quickly. My hobbies in **chess** and **poker** complement my analytical and strategic abilities. I am committed to applying my experience in **data science** and **machine learning** to make a positive and significant impact on various projects.
+:::
+
+## <i class="fas fa-graduation-cap"></i> Education
+
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education Blocks</title>
+<style>
+
+  .education-block {
+    background: transparent; /* Set the background to transparent */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px; /* Further reduced margin */
+    padding: 10px; /* Further reduced padding */
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .education-block:hover {
+    background-color: #f9f9f9; /* Background color on hover */
+    cursor: pointer; /* Change cursor to indicate clickable */
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0077B5;
+    margin-bottom: 1px; /* Further reduced margin */
+  }
+
+  .institution {
+    font-size: 15px;
+    margin-bottom: 1px; /* Further reduced margin */
+    display: flex;
+    align-items: center; /* Align the icon and text vertically */
+  }
+
+  .location {
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    align-items: center; /* Align the icon and text vertically */
+    margin-bottom: 2px; /* Further reduced margin */
+  }
+
+  .location-icon {
+    font-size: 16px; /* Adjust size as needed */
+    color: #0077B5; /* Or any other color you prefer */
+    margin-right: 5px; /* Space between icon and text */
+  }
+
+  .period {
+    font-size: 13px;
+    color: #666;
+    text-align: right;
+    margin-top: auto; /* Keeps the period at the bottom */
+  }
+
+  @media screen and (max-width: 768px) {
+    .education-block {
+        padding: 8px; /* Even more reduced padding for small screens */
+    }
+  }
+  .education-block-link {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: inherit; /* Mantém a cor do texto igual ao resto do conteúdo */
+  display: block; /* Faz o link se comportar como um bloco */
+}
+
+.education-block:hover {
+  background-color: #f9f9f9; /* Cor de fundo no hover */
+  /* Outras propriedades de estilo para hover */
+}
+
+/* Outros estilos permanecem inalterados */
+
+  
+</style>
+</head>
+<body>
+
+<a href="https://www.udesc.br/international/colleges" target="_blank" rel="noopener noreferrer" class="education-block-link">
+  <div class="education-block">
+    <div class="title">Master’s in Civil Engineering</div>
+    <div class="institution">
+      University of the State of Santa Catarina
+    </div>
+    <div class="location">Area of study: Machine Learning</div>
+    <div class="period">2021 - 2024</div>
+  </div>
+</a>
+
+<a href="https://www.unisociesc.com.br/" target="_blank" rel="noopener noreferrer" class="education-block-link">
+  <div class="education-block">
+    <div class="title">Postgraduate Structural Engineering</div>
+    <div class="institution">
+      Educational Society University of Santa Catarina
+    </div>
+    <div class="period">2014 - 2016</div>
+  </div>
+</a>
+
+<a href="https://www.udesc.br/international/colleges/graduate" target="_blank" rel="noopener noreferrer" class="education-block-link">
+  <div class="education-block">
+    <div class="title">Bachelor's Degree in Civil Engineering</div>
+    <div class="institution">
+      University of the State of Santa Catarina
+    </div>
+    <div class="period">2007 - 2012</div>
+  </div>
+</a>
+
+</body>
+</html>
+```
+## <i class="fas fa-briefcase"></i> Experience
+
+```{=html}
+
+<a href="https://cryptosresearch.com/" target="_blank" rel="noopener noreferrer" class="education-block-link">
+  <div class="education-block">
+    <div class="title">Co-founder and Data Scientist</div>
+    <div class="institution">
+      Cryptos Research 
+    </div>
+     <div class="location">Programming - Data Scraping - Statistical Analysis - Data Visualization</div>
+    <div class="period">2021 - 2024</div>
+  </div>
+</a>
+
+<a href="https://camara.joinville.br/" target="_blank" rel="noopener noreferrer" class="education-block-link">
+  <div class="education-block">
+    <div class="title">Civil Engineer</div>
+    <div class="institution">
+      Joinville City Council
+    </div>
+     <div class="location">Contract Administration - Building Maintenance - Legislative Process </div>
+    <div class="period">2014 - 2024</div>
+  </div>
+</a>
+<a href="https://danica.com.br/en" target="_blank" rel="noopener noreferrer" class="education-block-link">
+  <div class="education-block">
+    <div class="title">Construction Engineer</div>
+    <div class="institution">
+      Dânica 
+    </div>
+     <div class="location">Project Management - Thermal Insulation - Cold Storage Chambers </div>
+    <div class="period">2012 - 2014</div>
+  </div>
+</a>
+
+```
+:::
+:::
+
+<br>
+
+::: contact-item
+Further details of my portfolio and expertise in the field of data science and machine learning are available for consultation on my website: [**www.nionmaron.com/portfolio**](https://nionmaron.com/portfolio).
+
+<p class="small">
+This resume was last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. The code is available on [www.github.com/nionmaron/resume](https://github.com/nionmaron/resume)
+</p>
+:::
