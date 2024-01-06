@@ -1,5 +1,4 @@
 ---
-title: ""
 format: 
   html
 editor: visual
@@ -13,13 +12,22 @@ knitr:
 ```{r}
 #| include: false
 #| cache: false
-
 ```
 
 ::: columns
 ::: {.column width="35%"}
 ```{=html}
 <style>
+h2 {
+  font-size: 22px; /* Diminui o tamanho da letra */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+h3 {
+  font-size: 20px; /* Diminui o tamanho da letra */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
 /* Style for the image */
 .img-container {
   width: 200px; /* Initial width */
@@ -55,7 +63,7 @@ knitr:
 <a href="https://nionmaron.com/">
 
 ::: img-container
-<img src="images/profile.png" alt="Descriptive Alt Text"/>
+<img src="images/profile.png" alt="Nion Maron"/>
 :::
 
 </a>
@@ -82,6 +90,9 @@ knitr:
 bar_color <- "#969696" # Example: Red color
 bar_background <- "#d9d9d9" # Example: Light grey color
 ```
+
+[**`R`**, **`Python`**, **`SQL`**, `JavaScript`, `Scala`,`MQL5`]{.visible-in-print}
+
 
 ```{=html}
 <style>
@@ -114,7 +125,7 @@ bar_background <- "#d9d9d9" # Example: Light grey color
 </style>
 ```
 <!-- Skill Bars -->
-
+::: {.hide-in-print}
 ::: skill-bar
 ::: {.progress data-width="96"}
 :::
@@ -168,7 +179,7 @@ Scala
 MQL5
 :::
 :::
-
+:::
 <!-- Add more skill bars as needed -->
 
 ```{=html}
@@ -195,14 +206,14 @@ window.onload = function() {
 
 ### Languages
 
-Portuguese: Native <br> English: Proficient
+`Portuguese: Native` <br> `English: Proficient`
 :::
 
 ::: {.column width="4%"}
 :::
 
 ::: {.column width="61%"}
-# [**Nion M. Dransfeld**]{.highlight}
+# **Nion M. Dransfeld**
 
 ::: {style="text-align: justify"}
 <head>
@@ -221,12 +232,32 @@ Portuguese: Native <br> English: Proficient
   from {background-color: transparent;}
   to {background-color: #b3daff;} /* Um tom de azul claro e moderno */
 }
+.print-only {
+    display: none; /* Esconde elementos específicos para impressão */
+  }
+  
+  
+.visible-in-print {
+  display: none; /* Esconde o texto na tela */
+}
+
+/* Estilos específicos para impressão */
+@media print {
+  .visible-in-print {
+    display: block; /* Mostra o texto na impressão */
+  }
+  
+
+  .hide-in-print {
+    display: none; /* Esconde elementos específicos para impressão */
+  }
+}
 
 </style>
 ```
 </head>
 
-Graduated in **Civil Engineering** and passionate about **data analysis** and **Business Intelligence**, I possess a **self-taught** approach to solving complex challenges. With skills in transforming data into insights for finance, I am adaptable and evolve quickly. My hobbies in **chess** and **poker** complement my analytical and strategic abilities. I am committed to applying my experience in **data science** and **machine learning** to make a positive and significant impact on various projects.
+Graduated in **Civil Engineering** and passionate about **data analysis** and **Business Intelligence**, I possess a **self-taught** approach to solving complex challenges. With skills in transforming data into insights for finance, I am adaptable and evolve quickly. My hobbies in **chess** and **poker** complement my analytical and strategic abilities. I am committed to applying my experience in **data science** and **machine learning** to make a positive and significant impact on various projects. [[CV in PDF](documents/NionMaron-Resume.pdf).]{.hide-in-print} 
 :::
 
 ## <i class="fas fa-graduation-cap"></i> Education
@@ -383,17 +414,18 @@ Graduated in **Civil Engineering** and passionate about **data analysis** and **
     <div class="period">2012 - 2014</div>
   </div>
 </a>
-
 ```
 :::
 :::
 
 <br>
 
+::: {style="text-align: justify"}
 ::: contact-item
 Further details of my portfolio and expertise in the field of data science and machine learning are available for consultation on my website: [**www.nionmaron.com/portfolio**](https://nionmaron.com/portfolio).
 
 <p class="small">
-This resume was last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. The code is available on [www.github.com/nionmaron/resume](https://github.com/nionmaron/resume)
+This resume was last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. The code is available on [www.github.com/nionmaron/Resume-NionMaron](https://github.com/nionmaron/Resume-NionMaron). [Visit the website [https://nionmaron.com/CV](https://nionmaron.com/CV) to view the online version of the CV.]{.visible-in-print}
 </p>
+:::
 :::
