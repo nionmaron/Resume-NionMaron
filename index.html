@@ -48,6 +48,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="columns">
 <div class="column" style="width:35%;">
 <style>
+h2 {
+  font-size: 22px; /* Diminui o tamanho da letra */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+h3 {
+  font-size: 20px; /* Diminui o tamanho da letra */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
 /* Style for the image */
 .img-container {
   width: 200px; /* Initial width */
@@ -81,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <p><a href="https://nionmaron.com/"></a></p><a href="https://nionmaron.com/">
 <div class="img-container">
-<p><img src="images/profile.png" alt="Descriptive Alt Text"></p>
+<p><img src="images/profile.png" alt="Nion Maron"></p>
 </div>
 </a><p><a href="https://nionmaron.com/"></a></p>
 <section id="contact" class="level3">
@@ -99,6 +109,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="skills" class="level3">
 <h3 class="anchored" data-anchor-id="skills">Programming languages</h3>
+<p><span class="visible-in-print"><strong><code>R</code></strong>, <strong><code>Python</code></strong>, <strong><code>SQL</code></strong>, <code>JavaScript</code>, <code>Scala</code>,<code>MQL5</code></span></p>
 <style>
 /* Add some styling to the skill-bar */
 .skill-bar {
@@ -128,6 +139,7 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 <!-- Skill Bars -->
+<div class="hide-in-print">
 <div class="skill-bar">
 <div class="progress" data-width="96">
 
@@ -176,6 +188,7 @@ ul.task-list li input[type="checkbox"] {
 <p>MQL5</p>
 </div>
 </div>
+</div>
 <!-- Add more skill bars as needed -->
 <script>
 // Use JavaScript to animate the width of the progress bars
@@ -200,13 +213,13 @@ window.onload = function() {
 </section>
 <section id="languages" class="level3">
 <h3 class="anchored" data-anchor-id="languages">Languages</h3>
-<p>Portuguese: Native <br> English: Proficient</p>
+<p><code>Portuguese: Native</code> <br> <code>English: Proficient</code></p>
 </section>
 </div><div class="column" style="width:4%;">
 
 </div><div class="column" style="width:61%;">
 <section id="nion-m.-dransfeld" class="level1">
-<h1><span class="highlight"><strong>Nion M. Dransfeld</strong></span></h1>
+<h1><strong>Nion M. Dransfeld</strong></h1>
 <div style="text-align: justify">
 
 <style>
@@ -222,10 +235,30 @@ window.onload = function() {
   from {background-color: transparent;}
   to {background-color: #b3daff;} /* Um tom de azul claro e moderno */
 }
+.print-only {
+    display: none; /* Esconde elementos específicos para impressão */
+  }
+  
+  
+.visible-in-print {
+  display: none; /* Esconde o texto na tela */
+}
+
+/* Estilos específicos para impressão */
+@media print {
+  .visible-in-print {
+    display: block; /* Mostra o texto na impressão */
+  }
+  
+
+  .hide-in-print {
+    display: none; /* Esconde elementos específicos para impressão */
+  }
+}
 
 </style>
 
-<p>Graduated in <strong>Civil Engineering</strong> and passionate about <strong>data analysis</strong> and <strong>Business Intelligence</strong>, I possess a <strong>self-taught</strong> approach to solving complex challenges. With skills in transforming data into insights for finance, I am adaptable and evolve quickly. My hobbies in <strong>chess</strong> and <strong>poker</strong> complement my analytical and strategic abilities. I am committed to applying my experience in <strong>data science</strong> and <strong>machine learning</strong> to make a positive and significant impact on various projects.</p>
+<p>Graduated in <strong>Civil Engineering</strong> and passionate about <strong>data analysis</strong> and <strong>Business Intelligence</strong>, I possess a <strong>self-taught</strong> approach to solving complex challenges. With skills in transforming data into insights for finance, I am adaptable and evolve quickly. My hobbies in <strong>chess</strong> and <strong>poker</strong> complement my analytical and strategic abilities. I am committed to applying my experience in <strong>data science</strong> and <strong>machine learning</strong> to make a positive and significant impact on various projects. <span class="hide-in-print"><a href="documents/NionMaron-Resume.pdf">CV in PDF</a>.</span></p>
 </div>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education"><i class="fas fa-graduation-cap"></i> Education</h2>
@@ -379,17 +412,18 @@ window.onload = function() {
     <div class="period">2012 - 2014</div>
   </div>
 </a>
-
 </section>
 </section>
 </div>
 </div>
 <p><br></p>
+<div style="text-align: justify">
 <div class="contact-item">
 <p>Further details of my portfolio and expertise in the field of data science and machine learning are available for consultation on my website: <a href="https://nionmaron.com/portfolio"><strong>www.nionmaron.com/portfolio</strong></a>.</p>
 <p class="small">
-This resume was last updated on jan 05, 2024. The code is available on <a href="https://github.com/nionmaron/resume">www.github.com/nionmaron/resume</a>
+This resume was last updated on jan 06, 2024. The code is available on <a href="https://github.com/nionmaron/Resume-NionMaron">www.github.com/nionmaron/Resume-NionMaron</a>. <span class="visible-in-print">Visit the website <a href="https://nionmaron.com/CV">https://nionmaron.com/CV</a> to view the online version of the CV.</span>
 </p>
+</div>
 </div>
 
 </main>
