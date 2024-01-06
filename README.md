@@ -10,7 +10,6 @@ Welcome to my resume project repository! This project showcases my resume as an 
 -   **Quarto**: For creating dynamic and interactive documents.
 -   **HTML & CSS**: For custom styling and structure of the web-based resume.
 
-::: {.g-col-6 .g-col-lg-6}
 ## How to View the Resume
 
 To view my interactive resume:
@@ -34,9 +33,6 @@ Planned enhancements include:
 
 We're always looking for contributions and suggestions! If you'd like to propose changes or add new features, please feel free to open an issue or create a pull request.
 
-:::
-
-::: {.g-col-6 .g-col-lg-6}
 
 ## Preview
 
@@ -44,5 +40,4 @@ We're always looking for contributions and suggestions! If you'd like to propose
 <br>
 
 ![](images/modelo.gif)
-:::
 
